@@ -17,7 +17,8 @@
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -45,58 +46,58 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/cardPadding"
                         android:padding="@dimen/cardPadding">
                         <TextView
-                            android:id="@+id/tvDetailConferenceLocation"
+                            android:id="@+id/tvLocationName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="15dp"
+                            android:layout_marginVertical="10dp"
                             android:gravity="center_horizontal"
-                            android:text="PlatziConf location"
+                            android:text="@string/platziconf_name"
                             android:textColor="@color/colorPrimary"
                             android:textSize="30sp"
                             android:textStyle="bold" />
-
                         <TextView
+                            android:id="@+id/tvPlatziConfAddress"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:drawablePadding="@dimen/drawablePadding"
                             android:gravity="start"
-                            android:text="Location"
+                            android:text="@string/address"
                             android:textColor="@color/colorPrimary"
                             android:textSize="15sp"
                             app:drawableStartCompat="@drawable/ic__person_pin" />
-
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
                             android:layout_marginVertical="@dimen/viewVerticalMargin"
                             android:background="@color/colorPrimary" />
                         <TextView
+                            android:id="@+id/tvPlatziConfPhoneNum"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:drawablePadding="@dimen/drawablePadding"
                             android:gravity="start"
-                            android:text="Phone number"
+                            android:text="@string/phone_number"
                             android:textColor="@color/colorPrimary"
                             android:textSize="15sp"
                             app:drawableStartCompat="@drawable/ic__person_pin" />
-
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
                             android:layout_marginVertical="@dimen/viewVerticalMargin"
                             android:background="@color/colorPrimary" />
                         <TextView
+                            android:id="@+id/tvPlatziConfWebsite"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:drawablePadding="@dimen/drawablePadding"
                             android:gravity="start"
-                            android:text="Web site"
+                            android:text="@string/web_site"
                             android:textColor="@color/colorPrimary"
                             android:textSize="15sp"
                             app:drawableStartCompat="@drawable/ic__person_pin" />
-
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
